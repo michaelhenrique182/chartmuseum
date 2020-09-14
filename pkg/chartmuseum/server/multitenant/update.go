@@ -52,9 +52,9 @@ func (server *MultiTenantServer) initCacheTimer() {
 				server.RebuildIndex()
 			}
 		}()
-	} //else {
-	//	server.RebuildIndex()
-	//}
+	} else {
+		server.RebuildIndex()
+	}
 }
 
 func (server *MultiTenantServer) emitEvent(repo string, operationType operationType, chart *repo.ChartVersion) {
